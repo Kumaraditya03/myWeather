@@ -8,14 +8,13 @@ request(url,function(err,res,body){
     response.write("<h1>"+ 'City Name: ' +data['name']+'<br>'+"</h1>");
     response.write("<h1>"+ 'Country: '+data.sys['country']+'<br>'+'</h1>');
     response.write("<h1>"+ 'Temperature: '+data.main['temp']+'<br>'+'</h1>');
-    //response.write('<p>'+"hi"+'</p>');
     response.write("</div></body></html>");
     console.log(body);
 
 
 
 
-//response.write('hi');
+
 response.end();
 });
 }).listen(8080);
