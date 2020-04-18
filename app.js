@@ -10,6 +10,7 @@ request(url,function(err,res,body){
     response.write("<h1>"+ 'Temperature: '+data.main['temp']+'<br>'+'</h1>');
     response.write("</div></body></html>");
     console.log(body);
+    // Sample to check revert
 
 
 
